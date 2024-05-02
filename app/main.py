@@ -5,9 +5,11 @@ from app.model.model import predict, model_version
 
 app = FastAPI() 
 
+@dataclass
 class IntIn(BaseModel): 
     input_int: int 
 
+@dataclass
 class IntOut(BaseModel): 
     output_int: int 
 
